@@ -15,6 +15,7 @@ import java.util.List;
 public class GeminiTag {
 
     @Id
+    @Indexed
     private Long geminiNo;
 
     private List<Long> tagIds;

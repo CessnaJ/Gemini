@@ -26,6 +26,7 @@ public class Gallery {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "gemini_no")
+    @BatchSize(size = 16)
     private Gemini gemini;
 
     public void updateLikes(Integer dailyLike, Integer weeklyLike) {
